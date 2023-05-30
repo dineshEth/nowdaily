@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="touch-none">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Youtube - Sidebar</title>
+</head>
+<body class="bg-black text-white p-4">
+    <nav class="w-full flex flex-row justify-between">
+        <div class="mb-4 flex w-64 items-center justify-between">
+            <p class="hidden sm:block text-3xl hover:bg-gray-700 rounded-full w-10 h-10 text-center cursor-pointer">&#9776;</p>
+            <div class="flex flex-row cursor-pointer">
+                <img class="w-10" src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-85-226402.png?f=avif&w=256" alt="">
+                <p class="font-semibold text-2xl leading-10 ml-1">Premium<sup class="font-light text-[12px]">IN</sup></p>
+            </div>
+        </div>
+        <div class="hidden md:flex lg:justify-start items-start md:w-[600px] w-[300px] h-10 ">
+            <div class=" pl-2 w-[98%]  rounded-full flex  justify-end border-[1px] border-gray-400 ">
+                <input class="w-full border-none outline-none bg-transparent" type="text" placeholder="Search">
+                <div class="w-[70px] rounded-r-full  bg-gray-600 h-10 border-[1px] border-gray-400 material-symbols-outlined text-center p-2">search</div>
+            </div>
+            <div class="material-symbols-outlined w-10 h-10 mx-2 text-center text-white bg-gray-600 py-2 rounded-full">mic</div>
+        </div>
+        <div class="flex flex-row justify-center items-center">
+            <div class="block md:hidden mx-2">
+                <div class="material-symbols-outlined">cast</div>
+            </div>
+            <div class="mx-2 hidden md:block">
+                <div class="material-symbols-outlined">video_call</div>
+            </div>
+            <div class="material-symbols-outlined mx-2">notifications</div>
+            <div class="mx-2 block md:hidden">
+                <div class="material-symbols-outlined">search</div>
+            </div>
+            <img  class="w-8 h-8 object-cover rounded-full mx-2" src="https://images.unsplash.com/photo-1533108165347-036ec233d7ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="">
+        </div>
+        
+
+    </nav>
+    <div class="hidden text-white sm:flex sm:flex-col sm:items-start w-64 px-2 overflow-y-scroll overflow-x-hidden scroll-smooth touch-auto">    
+        <!-- Top logo -->
+        <!-- <p class="block visible sm:invisible sm:hidden text-3xl hover:bg-gray-700 rounded-full w-10 h-10 text-center cursor-pointer">&#9776;</p> -->
+        <!-- <div class="mb-4 flex w-[100%] items-center justify-between">
+            <p class="text-3xl hover:bg-gray-700 rounded-full w-10 h-10 text-center cursor-pointer">&#9776;</p>
+            <div class="flex flex-row cursor-pointer">
+                <img class="w-10" src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-85-226402.png?f=avif&w=256" alt="">
+                <p class="font-semibold text-2xl leading-10 ml-1">Premium<sup class="font-light text-[12px]">IN</sup></p>
+            </div>
+        </div> -->
+        <!-- Routes -->
+        <div class="w-[100%] flex flex-col gap-1">
+            <div class="font-light flex py-1 px-2 justify-start space-x-6 items-center bg-gray-600 hover:bg-gray-600 text-2xl rounded-md">
+                <div class="material-symbols-outlined  font-bold">home</div>
+                <p class="text-xl">Home</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">movie</span>
+                <p class="text-xl">Shorts</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">Subscriptions</span>
+                <p class="text-xl">Subscriptions</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined font-bold ">play_circle</span>
+                <p class="text-xl">Originals</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">library_music</span>
+                <p class="text-xl">YouTube Music</p>
+            </div>
+        </div>
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <!-- More options -->
+        <div class="w-[100%] flex flex-col gap-1">
+            <div class="font-light flex py-1 px-2 justify-start space-x-6 items-center hover:bg-gray-600 text-2xl rounded-md">
+                <div class="material-symbols-outlined  font-bold">video_library</div>
+                <p class="text-xl">Library</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">history</span>
+                <p class="text-xl">History</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">smart_display</span>
+                <p class="text-xl">Your Videos</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined font-bold ">watch_later</span>
+                <p class="text-xl">Watch Later</p>
+            </div>
+            <!-- <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">library_music</span>
+                <p class="text-xl">YouTube Music</p>
+            </div> -->
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">download</span>
+                <p class="text-xl">Downloads</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">playlist_add</span>
+                <p class="text-xl">MERN Stack in Hi ..</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">expand_more</span>
+                <p class="text-xl">Show more</p>
+            </div>
+            <div class="font-light  hidden flex  py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">thumb_up</span>
+                <p class="text-xl">Liked videos</p>
+            </div>
+            <div class="font-light hidden flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">playlist_add</span>
+                <p class="text-xl">Learn2Trade pro | ..</p>
+            </div>
+            <div class="font-light  hidden flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">playlist_add</span>
+                <p class="text-xl">Solana Developm ..</p>
+            </div>
+            <div class="font-light hidden flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">playlist_add</span>
+                <p class="text-xl">Solana Dapp Dev ..</p>
+            </div>
+            <div class="font-light hidden flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">expand_less</span>
+                <p class="text-xl">Show fewer</p>
+            </div>
+
+            
+        </div>
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <!-- Subscriptions section -->
+        <div class="w-[100%] flex flex-col justify-start   gap-1">
+            <p class="px-2 pb-4 text-xl">Subscriptions</p>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center rounded-md ">
+                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">Astro Arun Pandit</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center ">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">Code Eater</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center rounded-md ">
+                <img src="https://images.pexels.com/photos/2058661/pexels-photo-2058661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=10" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">Learn2Trade</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center ">
+                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">Design Code</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center rounded-md ">
+                <img src="https://www.freecodecamp.org/news/content/images/2021/05/freecodecamp-org-gravatar.jpeg" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">freecodecamp</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center ">
+                <img src="https://pbs.twimg.com/profile_images/1592585812650008579/8JavCOnE_400x400.png" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">Alchemy</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">expand_more</span>
+                <p class="text-xl">Show 20 more</p>
+            </div>
+            
+        </div>
+
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <!-- Explore section -->
+        <div class="w-[100%] flex flex-col justify-start   gap-1">
+            <p class="px-2 pb-4 text-xl">Explore</p>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6 items-center hover:bg-gray-600 text-2xl rounded-md">
+                <div class="material-symbols-outlined  font-bold">video_library</div>
+                <p class="text-xl">Trending</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">shopping_bag</span>
+                <p class="text-xl">Shopping</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">music_note</span>
+                <p class="text-xl">Music</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined font-bold ">movie</span>
+                <p class="text-xl">Film</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">library_music</span>
+                <p class="text-xl">Live</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">breaking_news_alt_1</span>
+                <p class="text-xl">News</p>
+            </div>  
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">sports</span>
+                <p class="text-xl">Sports</p>
+            </div> 
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">emoji_objects</span>
+                <p class="text-xl">Learning</p>
+            </div> 
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">styler</span>
+                <p class="text-xl">Fashion & Beauty</p>
+            </div> 
+            
+            
+        </div>
+
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <!-- More from YouTube  -->
+        <div class="w-[100%] flex flex-col justify-start   gap-1">
+            <p class="px-2 pb-4 text-xl">More from YouTube</p>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center rounded-md ">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/396/826/original/youtube-studio-icons-free-png.png" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">YouTube Studios</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center ">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-network-flat-3/100/Youtube_Music-256.png" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">YouTube Music</p>
+            </div>
+            <div class="flex flex-row space-x-6 py-1 px-2 hover:bg-gray-600 justify-start items-center rounded-md ">
+                <img src="https://play-lh.googleusercontent.com/S4wylkvt2jz16hnG9IG0pAZosbB82nWWy8P-rQkb54uH-SCVd5L2j7z7x1Vz5pZvIRc" class="w-8 h-8 rounded-full object-cover " alt="">
+                <p class="text-xl">YouTube Kids</p>
+            </div>
+        </div>
+
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <div class="w-[100%] flex flex-col gap-1">
+            <div class="font-light flex py-1 px-2 justify-start space-x-6 items-center  hover:bg-gray-600 text-2xl rounded-md">
+                <div class="material-symbols-outlined  font-bold">settings</div>
+                <p class="">Settings</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">flag</span>
+                <p class="">Report history</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined  font-bold">help</span>
+                <p class="">Help</p>
+            </div>
+            <div class="font-light flex py-1 px-2 justify-start space-x-6  items-center hover:bg-gray-600 text-2xl rounded-md">
+                <span class="material-symbols-outlined font-bold ">sms_failed</span>
+                <p class="">Send feedback</p>
+            </div>
+        </div>
+
+        <!-- Horizontal line -->
+        <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
+
+        <div class="px-2 flex flex-col gap-y-4">
+            <div class="flex flex-wrap gap-x-2">
+                <p class="cursor-pointer">About</p>
+                <p class="cursor-pointer">Press</p>
+                <p class="cursor-pointer">Copyright</p>
+                <p class="cursor-pointer">Contact us</p>
+                <p class="cursor-pointer">Creator</p>
+                <p class="cursor-pointer">Advertise</p>
+                <p class="cursor-pointer">Developers</p>
+            </div>
+            <div class="flex flex-wrap gap-x-2">
+                <p class="cursor-pointer">Terms</p>
+                <p class="cursor-pointer">Privacy</p>
+                <p class="cursor-pointer">Policy & Safety</p>
+                <p class="cursor-pointer">How YouTube works</p>
+                <p class="cursor-pointer">Test new features</p>
+            </div>
+            <p class="text-gray-500">© 2023 Google LLC</p>
+        </div>   
+    </div>
+</body>
+</html>
