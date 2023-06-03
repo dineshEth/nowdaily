@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Netflix clone</title>
+</head>
+<body class="bg-black text-white">
+    <div class="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg')]   h-[90vh]">
+        <div class="absolute left-0 right-0 bg-opacity-50 bg-black w-[100%] h-[90vh] ">
+        </div>
+        <nav class="flex items-center justify-between sm:mx-32 mx-6 p-2 z-5 opacity-95">
+            <img class="sm:w-36 w-20 opacity-100" src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png" alt="">
+            <div class="flex flex-row flex-nowrap">
+                <div class="border-[1px] border-white inline-block rounded-md mx-3 p-1 items-center">
+                    <div class="hidden sm:inline">
+                        <span class="material-symbols-outlined  ">language</span>
+                    </div>
+                    <select name="lang" id="lang" class="bg-transparent border-none outline-none ">
+                        <option class="bg-none" id="lang" name="lang" value="English">English</option>
+                        <option class="bg-none" id="lang" name="lang" value="English">French</option>
+                        <option class="bg-none" id="lang" name="lang" value="English">German</option>
+                    </select>
+                </div>
+                <button class="bg-red-700 sm:py-[5px] py-[1px]  sm:px-4 px-4  rounded-md">Sign In</button>
+            </div>
+        </nav>
+           <!-- Text  -->
+        <div class="flex flex-col z-5 justify-center items-center gap-4 h-[90vh]">
+            <p class="font-extrabold sm:text-5xl text-4xl text-center opacity-95">Unlimited movies, TV shows and more</p>
+            <p class="text-xl text-center opacity-95">Watch anywhere. Cancel anytime</p>
+            <p class="text-xl text-center opacity-95">Ready to watch? Enter your email to create or restart your membership</p>
+            <div class="text-xl flex flex-col sm:flex-row justify-center items-center gap-2 opacity-95">
+                <input type="email" class="border-gray-500 border-[1px] outline-none bg-blend-lighten bg-gray-800 bg-opacity-40 rounded-sm sm:w-[400px] w-[300px]  p-3 ">
+                <button class="font-semibold bg-red-700 py-3  sm:px-6 px-4  rounded-lg  mx-2 ">Get Started <span class="material-symbols-outlined">arrow_forward_ios </span> </button>
+            </div>
+        </div>
+    </div>
+    <!-- Last line  -->
+    <div class="border-4 border-gray-500"></div>
+
+    <div class="flex  flex-col xl:flex-row justify-center gap-10 xl:gap-2 items-center p-4">
+        <div class="flex flex-col text-white  xl:p-16 xl:mx-16 text-center xl:text-left">
+            <p class="xl:text-5xl text-4xl  my-5 font-extrabold">Enjoy on your TV</p>
+            <p class="xl:text-2xl text-xl">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">    
+    </div>
+
+    <div class="border-4 border-gray-500"></div>
+
+    <div class="flex my-10 py-10  flex-col xl:flex-row-reverse justify-center gap-10 xl:gap-2 items-center p-4">
+        <div class="flex flex-col text-white  xl:p-16 xl:mx-16 text-center xl:text-left">
+            <p class="xl:text-5xl text-4xl  my-5 font-extrabold">Download your shows to watch offline</p>
+            <p class="xl:text-2xl text-xl">Save your favourites easily and always have something to watch.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">    
+    </div>
+
+    <div class="border-4 border-gray-500"></div>
+
+    <div class="flex  flex-col xl:flex-row justify-center gap-10 xl:gap-2 items-center p-4">
+        <div class="flex flex-col text-white  xl:p-16 xl:mx-16 text-center xl:text-left">
+            <p class="xl:text-5xl text-4xl  my-5 font-extrabold">Watch everywhere</p>
+            <p class="xl:text-2xl text-xl">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">    
+    </div>
+
+    <div class="border-4 border-gray-500"></div>
+
+    <div class="flex  flex-col xl:flex-row-reverse justify-center gap-10 xl:gap-2 items-center p-4">
+        <div class="flex flex-col text-white  xl:p-16 xl:mx-16 text-center xl:text-left">
+            <p class="xl:text-5xl text-4xl  my-5 font-extrabold">Create profiles for kids</p>
+            <p class="xl:text-2xl text-xl">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+        <img src="https://occ-0-4995-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">    
+    </div>
+
+    <div class="border-4 border-gray-500"></div>
+
+    <!-- FAQs  -->
+    <div class="p-4 ">
+        <div class="xl:text-5xl my-10 text-4xl text-center font-extrabold ">Frequently Asked Questions</div>
+        <div class="flex flex-col gap-3 xl:px-10 xl:mx-20">
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">What is Netflix?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        Netflix is a streaming service that offers a wide variety of award-winning TV 
+                        shows, movies, anime, documentaries and more – on 
+                        thousands of internet-connected devices.
+                    </p>
+                    <p class="my-4">
+                        You can watch as much as you want, whenever you want, without a single ad – all 
+                        for one low monthly price. There's always something new to discover, 
+                        and new TV shows and movies are added every week!
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">How much does Netflix cost?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or 
+                        streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 
+                        a month. No extra costs, no contracts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">Where can I watch?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        Watch anywhere, anytime. Sign in with your Netflix account to watch 
+                        instantly on the web at netflix.com from your personal computer or 
+                        on any internet-connected device that offers the Netflix app, 
+                        including smart TVs, smartphones, tablets, streaming media players
+                        and game consoles.
+                    </p>
+                    <p class="my-4">
+                        You can also download your favourite shows with the iOS, Android, 
+                        or Windows 10 app. Use downloads to watch while you're on the go 
+                        and without an internet connection. Take Netflix with you anywhere.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">How do I cancel?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        Netflix is flexible. There are no annoying contracts and no commitments.
+                        You can easily cancel your account online in two clicks. 
+                        There are no cancellation fees – start or stop your account anytime.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">What can I watch on Netflix?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        Netflix has an extensive library of feature films, documentaries, 
+                        TV shows, anime, award-winning Netflix originals, and more. 
+                        Watch as much as you want, anytime you want.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 p-5 rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-2xl font-medium">Is Netflix good for kids?</div>
+                <div class="collapse-content text-xl">
+                    <p class="my-2">
+                        The Netflix Kids experience is included in your membership 
+                        to give parents control while kids enjoy family-friendly TV shows 
+                        and films in their own space.
+                    </p>
+                    <p class="my-4">
+                        Kids profiles come with PIN-protected parental controls that let 
+                        you restrict the maturity rating of content kids can 
+                        watch and block specific titles you don’t want kids to see.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-4 my-16">
+            <p class="text-xl text-center opacity-95">Ready to watch? Enter your email to create or restart your membership</p>
+            <div class="text-xl flex flex-col sm:flex-row justify-center items-center gap-2 opacity-95">
+                <input type="email" class="border-gray-500 border-[1px] outline-none bg-blend-lighten bg-gray-800 bg-opacity-40 rounded-sm sm:w-[400px] w-[300px]  p-3 ">
+                <button class="font-semibold bg-red-700 py-3  sm:px-6 px-4  rounded-lg  mx-2 ">Get Started <span class="material-symbols-outlined">arrow_forward_ios </span> </button>
+            </div>
+        </div>   
+    </div>
+
+    <div class="border-4 border-gray-500"></div>
+
+    <!-- Footer  -->
+    <div class="p-4 text-2xl md:text-lg xl:text-xl xl:px-10 xl:mx-16">
+        <p class="my-4 py-2">Questions? Call <a href="tel:+000-800-919-1694" class="underline">000-800-919-1694</a></p>
+
+        <div class="flex flex-col md:flex-row  underline gap-2 py-2 justify-around">
+            <div class="flex flex-col">
+                <a href="http://">FAQs</a>
+                <a href="http://">Help Center</a>
+                <a href="http://">Accounts</a>
+                <a href="http://">Media Center</a>
+                <a href="http://">Investor Relations</a>
+            </div>
+            <div class="flex flex-col">
+                <a href="http://">Jobs</a>
+                <a href="http://">Ways to Watch</a>
+                <a href="http://">Terms of Use</a>
+                <a href="http://">Privacy</a>
+                <a href="http://">Cookies Preference</a>
+            </div>
+            <div class="flex flex-col">
+                <a href="http://">Corporate Information</a>
+                <a href="http://">Contact Us</a>
+                <a href="http://">Speed Test</a>
+                <a href="http://">Legal Notices</a>
+                <a href="http://">Only on Netflix</a>
+            </div>
+        </div>
+        <div class="border-[1px] border-gray-600 inline-block  items-center px-4 my-4 rounded-sm ">
+                <span class="material-symbols-outlined  ">language</span>
+            <select name="lang" id="lang" class="bg-transparent border-none outline-none ">
+                <option class="bg-none" id="lang" name="lang" value="English">English</option>
+                <option class="bg-none" id="lang" name="lang" value="English">French</option>
+                <option class="bg-none" id="lang" name="lang" value="English">German</option>
+            </select>
+        </div>
+        <div class="mb-10">Netflix India</div>
+    </div>
+
+
+
+
+
+
+    
+
+
+   
+    
+</body>
+</html>
