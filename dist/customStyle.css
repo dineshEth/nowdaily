@@ -1,0 +1,22 @@
+
+::-webkit-scrollbar{
+    width: 10px;
+    scroll-behavior: smooth;
+    /* height: 8px; */
+    /* border-radius:8px; */
+}
+::-webkit-scrollbar-track{
+    /* width: 5px; */
+    height: 5px;
+    background-color: gray;
+    border-radius: 8px;
+
+}
+::-webkit-scrollbar-thumb{
+    width: 2px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: rgb(42, 41, 41);
+    /* opacity: 0.5; */
+    /* background:linear-gradient(rgb(7, 109, 211),rgb(130, 10, 154)); */
+}

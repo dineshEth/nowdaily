@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="customStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Youtube - Sidebar</title>
 </head>
 <body class="bg-black text-white p-4">
     <nav class="w-full flex flex-row justify-between">
-        <div class="mb-4 flex w-64 items-center justify-between">
+        <div class="mb-4 flex sm:w-64 w-32 items-center justify-between">
             <p class="hidden sm:block text-3xl hover:bg-gray-700 rounded-full w-10 h-10 text-center cursor-pointer">&#9776;</p>
             <div class="flex flex-row cursor-pointer">
                 <img class="w-10" src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-85-226402.png?f=avif&w=256" alt="">
@@ -35,7 +36,7 @@
             <div class="mx-2 block md:hidden">
                 <div class="material-symbols-outlined">search</div>
             </div>
-            <img  class="w-8 h-8 object-cover rounded-full mx-2" src="https://images.unsplash.com/photo-1533108165347-036ec233d7ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="">
+            <img  class="w-[32px] h-[32px] object-content rounded-full mx-2" src="https://images.unsplash.com/photo-1533108165347-036ec233d7ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="">
         </div>
         
 
@@ -51,7 +52,7 @@
             </div>
         </div> -->
         <!-- Routes -->
-        <div class="w-[100%] flex flex-col">
+        <div class="w-[100%] flex flex-col" id="side-scroll">
             <div class="font-light flex py-1 px-2 justify-start space-x-6 items-center bg-gray-600 hover:bg-gray-600 text-2xl rounded-md">
                 <div class="material-symbols-outlined  font-bold">home</div>
                 <p class="text-xl">Home</p>
@@ -261,6 +262,7 @@
         <!-- Horizontal line -->
         <div class="border-t-[1px] border-gray-500 my-4 w-[100%]"></div>
 
+        <!-- Sidebar footer  -->
         <div class="px-2 flex flex-col gap-y-4">
             <div class="flex flex-wrap gap-x-2">
                 <p class="cursor-pointer">About</p>
